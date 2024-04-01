@@ -1,0 +1,72 @@
+=============== Apr 1, 2024 (IST) ===============
+17:03:25.220197 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:03:25.229648 db@open opening
+17:03:25.232017 version@stat F·[] S·0B[] Sc·[]
+17:03:25.233059 db@janitor F·2 G·0
+17:03:25.233059 db@open done T·3.4118ms
+17:03:25.281527 db@close closing
+17:03:25.282033 db@close done T·506.1µs
+=============== Apr 1, 2024 (IST) ===============
+17:12:58.152635 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:12:58.158149 version@stat F·[] S·0B[] Sc·[]
+17:12:58.159155 db@open opening
+17:12:58.159155 journal@recovery F·1
+17:12:58.162152 journal@recovery recovering @1
+17:12:58.173451 memdb@flush created L0@2 N·624 S·51KiB "\x02d\xfc..\x19Ba,v431":"\xfe\x88\xcf..H\xef\xcc,v364"
+17:12:58.177381 version@stat F·[1] S·51KiB[51KiB] Sc·[0.25]
+17:12:58.191181 db@janitor F·3 G·0
+17:12:58.191181 db@open done T·32.0255ms
+17:23:30.257809 db@close closing
+17:23:30.258807 db@close done T·998.5µs
+=============== Apr 1, 2024 (IST) ===============
+22:51:12.359935 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:51:12.368956 version@stat F·[1] S·51KiB[51KiB] Sc·[0.25]
+22:51:12.368956 db@open opening
+22:51:12.368956 journal@recovery F·1
+22:51:12.373479 journal@recovery recovering @3
+22:51:12.385659 memdb@flush created L0@5 N·1366 S·70KiB "\x03/h..]\x8bi,v1984":"\xf7\x18*..6ԕ,v1988"
+22:51:12.388901 version@stat F·[2] S·122KiB[122KiB] Sc·[0.50]
+22:51:12.404502 db@janitor F·4 G·0
+22:51:12.404502 db@open done T·35.5464ms
+=============== Apr 1, 2024 (IST) ===============
+22:51:28.915012 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:51:28.922117 version@stat F·[2] S·122KiB[122KiB] Sc·[0.50]
+22:51:28.922117 db@open opening
+22:51:28.922623 journal@recovery F·1
+22:51:28.930156 journal@recovery recovering @6
+22:51:28.941163 memdb@flush created L0@8 N·2 S·431B "eth..ԑ\xf3,v1993":"unc..own,v1994"
+22:51:28.958159 version@stat F·[3] S·122KiB[122KiB] Sc·[0.75]
+22:51:28.974695 db@janitor F·5 G·0
+22:51:28.974695 db@open done T·52.5776ms
+=============== Apr 1, 2024 (IST) ===============
+22:52:22.774151 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:52:22.784880 version@stat F·[3] S·122KiB[122KiB] Sc·[0.75]
+22:52:22.784880 db@open opening
+22:52:22.785394 journal@recovery F·1
+22:52:22.788831 journal@recovery recovering @9
+22:52:22.801011 memdb@flush created L0@11 N·2 S·436B "eth..ԑ\xf3,v1996":"unc..own,v1997"
+22:52:22.804883 version@stat F·[4] S·122KiB[122KiB] Sc·[1.00]
+22:52:22.827039 db@janitor F·6 G·0
+22:52:22.827039 db@open done T·42.1589ms
+22:52:22.827039 table@compaction L0·4 -> L1·0 S·122KiB Q·1998
+22:52:22.844918 table@build created L1@14 N·1622 S·107KiB "\x02d\xfc..\x19Ba,v431":"\xfe\x88\xcf..H\xef\xcc,v364"
+22:52:22.845453 version@stat F·[0 1] S·107KiB[0B 107KiB] Sc·[0.00 0.00]
+22:52:22.846521 table@compaction committed F-3 S-15KiB Ke·0 D·372 T·18.9397ms
+22:52:22.848185 table@remove removed @8
+22:52:22.849262 table@remove removed @5
+22:52:22.850335 table@remove removed @2
+23:39:46.013585 db@close closing
+23:39:46.015642 db@close done T·2.0568ms
+=============== Apr 1, 2024 (IST) ===============
+23:39:58.181078 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:39:58.185995 version@stat F·[0 1] S·107KiB[0B 107KiB] Sc·[0.00 0.00]
+23:39:58.185995 db@open opening
+23:39:58.185995 journal@recovery F·1
+23:39:58.187533 journal@recovery recovering @12
+23:39:58.201096 memdb@flush created L0@15 N·3705 S·193KiB "\x02B\xae..yF\xee,v5696":"\xefmr..to\x94,v5697"
+23:39:58.203166 version@stat F·[1 1] S·300KiB[193KiB 107KiB] Sc·[0.25 0.00]
+23:39:58.213692 db@janitor F·5 G·1
+23:39:58.213692 db@janitor removing table-11
+23:39:58.214216 db@open done T·28.2212ms
+23:56:40.250482 db@close closing
+23:56:40.251529 db@close done T·1.0461ms

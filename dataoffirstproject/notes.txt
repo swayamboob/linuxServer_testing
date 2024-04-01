@@ -1,0 +1,67 @@
+# main first node
+main address
+ 0xBf1e6D8F43c9bb0FA09f149D502b15ccC535c577
+
+blockchain node
+geth --datadir  "./main" --networkid 41411 --port 30303 --mine --miner.gasprice 0
+ --unlock 0xBf1e6D8F43c9bb0FA09f149D502b15ccC535c577 --password ./Password.txt 
+--allow-insecure-unlock --ipcdisable --mine console
+
+
+//single node running connect with port 
+geth --datadir  "./main" --networkid 41411 --port 30303 --mine --miner.gasprice 0
+ --unlock 0xBf1e6D8F43c9bb0FA09f149D502b15ccC535c577 --password ./Password.txt 
+--allow-insecure-unlock --mine --http --http.addr 0.0.0.0 --http.api  'debug,net,admin,db,eth,web3,miner,personal' --http.corsdomain '*'  
+--authrpc.port  8545 --ipcdisable --nodiscover console
+
+
+new account:
+0xD44CF847fC0A1171953Fb8051A39eDe5184F4e26
+geth --datadir  "./main" --networkid 41411 --port 30303 --mine --miner.gasprice 0
+ --unlock 0xD44CF847fC0A1171953Fb8051A39eDe5184F4e26 --password ./Password.txt 
+--allow-insecure-unlock --mine --http --http.addr 0.0.0.0 --http.api  'debug,net,admin,db,eth,web3,miner,personal' --http.corsdomain '*'  
+--authrpc.port  8545 --ipcdisable --nodiscover console
+==========
+
+#2nd node -api/rpc
+Public address of the key:   0xBa9496a6EF6544951fc89EF6C46EDAa2781A8252
+
+cmd:
+//(geth --networkid 41411 --identity "apinode" --datadir  "./apinode" --port 30304 --ipcdisable --http 
+--http.addr 0.0.0.0 --http.api 'debug,net,admin,db,eth,web3,miner,personal' --http.corsdomain "*" 
+--http.port 8535 --ws --ws.addr 0.0.0.0 --ws.port 8536 --ws.origins *  --ws.api "eth,net,web3,network,debug,txpool" --bootnodes  enode://60543cd7217c9e6a2a58f8cf8f61646ffa83d691fd6cec4fa4d45a4943511bc92b276e004668984f2a449ef34f5f0b78f63b44c6398407aecef051f106c4e521@127.0.0.1:0?discport=30301
+)
+
+changed command for 2nd node:
+
+geth  --networkid 41411 --identity "apinode" --datadir "./apinode" --port 30304 --http --http.addr 0.0.0.0 --http.api  'debug,net,admin,db,eth,web3,miner,personal' --http.corsdomain '*'  
+--authrpc.port  8535 --ipcdisable --nodiscover console
+
+
+--bootnodes admin.addPeer(
+"enode://6dbdd06bb4742abd3419825a1c0e153b9939d648b0711d9b145642e767edb86fe6e445bb02ca7ef1f903cdea7cc3d2ca2db74be946b5b23ee7e16339c2e0510f@127.0.0.1:30303"
+)
+
+
+#bootnode
+enode://60543cd7217c9e6a2a58f8cf8f61646ffa83d691fd6cec4fa4d45a4943511bc92b276e004668984f2a449ef34f5f0b78f63b44c6398407aecef051f106c4e521@127.0.0.1:0?discport=30301
+
+
+#funds : trnasfer as follow:-
+eth.sendTransaction({
+  from:eth.coinbase,
+  to: '0x7Ed09175A18c53806a3A35F14e640213AC0b0240',
+  value: web3.toWei(100, 'ether')
+})
+
+/// accoutn retrieval
+
+personal.unlockAccount('0x7Ed09175A18c53806a3A35F14e640213AC0b0240', 'Swayam@123', 0);
+var privateKey = eth.accounts[0];
+console.log("Private Key:", privateKey);
+
+
++==========
+balance
+eth.getBalance(" 0xBf1e6D8F43c9bb0FA09f149D502b15ccC535c577
+")

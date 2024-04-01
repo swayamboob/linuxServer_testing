@@ -1,0 +1,14 @@
+main account address:0x56a7CA0C302C6794e70138CD3d32b641ae7a042A
+
+
+command:
+geth --datadir "./main" --networkid 41411 --port 30303 --mine --miner.gasprice 0 --unlock 0x56a7CA0C302C6794e70138CD3d32b641ae7a042A --password ./password.txt --allow-insecure-unlock --mine --http --http.addr 0.0.0.0 --http.api 'debut,net,admin,db,eth,web3,miner,personal' --http.corsdomain "*" --authrpc.port 8545 --ipcdisable --nodiscover console
+
+
+transfer:
+eth.sendTransaction(
+{ from:eth.coinbase,
+to: "0x56003385dCf6CC59Ee85b5A440837D1b67e8Ee8c",
+value: web3.toWei(1000,"ether")
+}
+)
